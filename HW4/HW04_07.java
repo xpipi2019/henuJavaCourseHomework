@@ -1,8 +1,8 @@
-import java.util.Scanner;
-
 /**
  * @author XPIPI
  */
+import java.util.Scanner;
+
 class CustomException extends Exception {
     public CustomException(String message) {
         super(message);
