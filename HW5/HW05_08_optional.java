@@ -3,6 +3,7 @@
  */
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+// Pattern 用来写正则表达式  Matcher 匹配器主要用来匹配
 
 public class HW05_08_optional {
     public static void main(String[] args) {
