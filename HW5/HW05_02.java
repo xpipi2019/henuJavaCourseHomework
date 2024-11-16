@@ -2,6 +2,7 @@
  * @author XPIPI
  */
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class HW05_02 {
@@ -29,13 +30,16 @@ public class HW05_02 {
             phoneNumber = sc.nextLine();
 
             System.out.println("注册成功！");
-            login(sc, username, password);
+
+            if(login(sc, username, password)){
+                userDetails(username, password, phoneNumber);
+            }
         }
 
         sc.close();
     }
 
-    public static void login(Scanner sc, String registeredUsername, String registeredPassword) {
+    public static boolean login(Scanner sc, String registeredUsername, String registeredPassword) {
         int nowAttempts = 0;
         final int maxAttempts = 3;
         boolean loginSuccessful = false;
@@ -60,6 +64,20 @@ public class HW05_02 {
                 }
             }
         }
+
+        return loginSuccessful;
+    }
+
+    public static void userDetails(String registeredUsername, String registeredPassword, String phoneNumber) {
+        System.out.println("用户信息：");
+        System.out.println("用户名："+registeredUsername);
+
+        char[] c = registeredPassword.toCharArray();
+        Arrays.fill(c, '*');
+        String pwdShow = new String(c,0,c.length);
+        System.out.println("密码："+pwdShow);
+
+        System.out.println("电话："+ phoneNumber);
     }
 
     public static void openCalc() {
