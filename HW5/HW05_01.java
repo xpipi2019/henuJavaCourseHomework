@@ -21,7 +21,10 @@ public class HW05_01 {
         String decodedText = decodeBase64(encodedText);
         System.out.println("解码后的字符串：" + decodedText);
         System.out.println("*******************");
+
+        sc.close();
     }
+
 
     public static String encodeBase64(String text) {
         return Base64.getEncoder().encodeToString(text.getBytes());

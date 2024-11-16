@@ -17,5 +17,7 @@ public class HW05_07 {
         else {
             System.out.println("该年二月份有28天");
         }
+
+        sc.close();
     }
 }

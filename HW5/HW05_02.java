@@ -31,6 +31,8 @@ public class HW05_02 {
             System.out.println("注册成功！");
             login(sc, username, password);
         }
+
+        sc.close();
     }
 
     public static void login(Scanner sc, String registeredUsername, String registeredPassword) {

@@ -6,8 +6,10 @@ import java.util.Scanner;
 public class HW02_04 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.println("请输入年份：");
         int year = sc.nextInt();
+
         switch (year % 12) {
             case 0:
                 System.out.println("猴");
@@ -46,5 +48,7 @@ public class HW02_04 {
                 System.out.println("羊");
                 break;
         }
+
+        sc.close();
     }
 }

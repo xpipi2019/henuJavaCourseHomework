@@ -28,5 +28,7 @@ public class HW05_04 {
         }
         // element : array 遍历array中元素
         System.out.println("使用StringBuffer拼接结果：" + getStringByBuffer.toString());
+
+        sc.close();
     }
 }

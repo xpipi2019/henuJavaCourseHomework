@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class HW02_13 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.println("输入矩阵行数: ");
         int rows = sc.nextInt();
         System.out.println("输入矩阵列数: ");
@@ -35,5 +36,7 @@ public class HW02_13 {
             }
             System.out.println();
         }
+
+        sc.close();
     }
 }

@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class HW02_10 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.print("请输入学生个数: ");
         int nums = sc.nextInt();
         double[] grades = new double[nums];
@@ -20,6 +21,8 @@ public class HW02_10 {
 
         System.out.println("第一名 名字："+names[0]+" 成绩："+grades[0]);
         System.out.println("第二名 名字："+names[1]+" 成绩："+grades[1]);
+
+        sc.close();
     }
 
     static void sortWithName(double[] datas, String[] tags) {

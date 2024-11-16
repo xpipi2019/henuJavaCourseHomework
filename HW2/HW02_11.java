@@ -34,5 +34,7 @@ public class HW02_11 {
         double y3 = sc.nextDouble();
         double z3 = sc.nextDouble();
         System.out.println("最大值为："+myMax.findMax(x3,y3,z3));
+
+        sc.close();
     }
 }

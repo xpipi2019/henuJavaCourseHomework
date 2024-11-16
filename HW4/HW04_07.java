@@ -32,5 +32,7 @@ public class HW04_07 {
                 System.out.println("错误: " + e.getMessage());
             }
         }
+
+        sc.close();
         }
 }

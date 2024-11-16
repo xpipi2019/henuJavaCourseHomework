@@ -9,12 +9,15 @@ public class HW02_03 {
 
         System.out.println("请输入用户名: ");
         String user = sc.nextLine();
+
         while(checkInput(user,3)){
             System.out.println("用户名必须至少为3位，请重新输入！");
             user = sc.nextLine();
         }
+
         boolean t = true;
         String password,password2;
+
         while(t){
             System.out.println("请输入密码: ");
             password = sc.nextLine();
@@ -33,6 +36,7 @@ public class HW02_03 {
             }
         }
         //密码条件检查
+        sc.close();
     }
 
     static boolean checkInput(String input,int minLength) {

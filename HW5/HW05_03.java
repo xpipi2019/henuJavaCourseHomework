@@ -33,5 +33,7 @@ public class HW05_03 {
         System.out.println("小写字母个数：" + lowerCaseCount);
         System.out.println("数字个数：" + digitCount);
         System.out.println("其他字符个数：" + otherCount);
+
+        sc.close();
     }
 }

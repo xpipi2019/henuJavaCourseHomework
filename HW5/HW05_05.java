@@ -9,15 +9,17 @@ public class HW05_05 {
         String code = getCode(6);
         System.out.println("验证码：" + code);
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("请输入验证码：");
-        String userInput = scanner.nextLine();
+        String userInput = sc.nextLine();
 
         if (code.equalsIgnoreCase(userInput)) {
             System.out.println("恭喜验证成功！");
         } else {
             System.out.println("验证失败！");
         }
+
+        sc.close();
     }
 
     public static String getCode(final int length) {
