@@ -10,11 +10,11 @@ public class HW05_12 {
     public static void main(String[] args) {
         Set<Person> persons = new HashSet<>();
 
-        addPerson(persons, new Person("Alice", 30));
-        addPerson(persons, new Person("Bob", 25));
-        addPerson(persons, new Person("Alice", 35));
-        addPerson(persons, new Person("Charlie", 40));
-        addPerson(persons, new Person("Bob", 29));
+        addPerson(persons, new Person("Bell", 30));
+        addPerson(persons, new Person("CCC", 25));
+        addPerson(persons, new Person("Bell", 35));
+        addPerson(persons, new Person("CC", 40));
+        addPerson(persons, new Person("CCC", 29));
 
         System.out.println("HashSet 中的 Person 对象：");
         for (Person person : persons) {
@@ -31,8 +31,8 @@ public class HW05_12 {
 
 // Person类
 class Person {
-    private String name;
-    private int age;
+    private final String name;
+    private final int age;
 
     public Person(String name, int age) {
         this.name = name;

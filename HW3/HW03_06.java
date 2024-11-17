@@ -53,9 +53,9 @@ class ATM {
     }
 
     public boolean login(String accountID, String password) {
-        for (int i = 0; i < accounts.length; i++) {
-            if (accounts[i].getAccountID().equals(accountID) && accounts[i].checkPassword(password)) {
-                loggedInAccount = accounts[i];
+        for (Account account : accounts) {
+            if (account.getAccountID().equals(accountID) && account.checkPassword(password)) {
+                loggedInAccount = account;
                 System.out.println("Welcome," + loggedInAccount.getaccountMaster() + "!");
                 return true;
             }

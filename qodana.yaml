@@ -1,0 +1,62 @@
+#-------------------------------------------------------------------------------#
+#               Qodana analysis is configured by qodana.yaml file               #
+#             https://www.jetbrains.com/help/qodana/qodana-yaml.html            #
+#-------------------------------------------------------------------------------#
+version: "1.0"
+
+#Specify inspection profile for code analysis
+profile:
+  name: qodana.starter
+
+#Enable inspections
+#include:
+#  - name: <SomeEnabledInspectionId>
+
+#Disable inspections
+#exclude:
+#  - name: <SomeDisabledInspectionId>
+#    paths:
+#      - <path/where/not/run/inspection>
+
+projectJDK: 17 #(Applied in CI/CD pipeline)
+
+#Execute shell command before Qodana execution (Applied in CI/CD pipeline)
+#bootstrap: sh ./prepare-qodana.sh
+
+#Install IDE plugins before Qodana execution (Applied in CI/CD pipeline)
+#plugins:
+#  - id: <plugin.id> #(plugin id can be found at https://plugins.jetbrains.com)
+
+#Specify Qodana linter for analysis (Applied in CI/CD pipeline)
+linter: jetbrains/qodana-jvm:latest
+exclude:
+  - name: ManualMinMaxCalculation
+    paths:
+      - HW2\HW02_11.java
+  - name: FieldCanBeLocal
+    paths:
+      - HW3\HW03_05.java
+      - HW4\HW04_02.java
+  - name: IntegerDivisionInFloatingPointContext
+    paths:
+      - HW3\HW03_02.java
+  - name: StringConcatenationInLoops
+    paths:
+      - HW5\HW05_04.java
+  - name: FinalMethodInFinalClass
+    paths:
+      - HW4\HW04_02.java
+  - name: UnusedAssignment
+    paths:
+      - HW4\HW04_02.java
+  - name: StringBufferReplaceableByStringBuilder
+    paths:
+      - HW5\HW05_04.java
+      - HW5\HW05_05.java
+  - name: Convert2Lambda
+    paths:
+      - HW4\HW04_06.java
+  - name: FieldMayBeFinal
+    paths:
+      - HW3
+      - HW4

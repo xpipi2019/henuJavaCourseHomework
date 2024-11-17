@@ -81,9 +81,9 @@ class Operation {
     }
 
     public TheBook findBookByTitle(String title) {
-        for (int i = 0; i < books.length; i++) {
-            if (books[i].getTitle().equalsIgnoreCase(title)) {
-                return books[i];
+        for (TheBook book : books) {
+            if (book.getTitle().equalsIgnoreCase(title)) {
+                return book;
             }
         }
         return null;
@@ -102,8 +102,8 @@ public class HW03_05 {
     public static void main(String[] args) {
         Operation operation = new Operation();
 
-        Student student1 = new Student(001, "张三");
-        Student student2 = new Student(002, "李四");
+        Student student1 = new Student(1, "张三");
+        Student student2 = new Student(2, "李四");
 
         System.out.println(student1.name + " 来到图书馆:");
         operation.borrowBook(student1, "Java Programming");

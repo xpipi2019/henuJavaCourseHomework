@@ -74,7 +74,7 @@ public class HW05_02 {
 
         char[] c = registeredPassword.toCharArray();
         Arrays.fill(c, '*');
-        String pwdShow = new String(c,0,c.length);
+        String pwdShow = new String(c);
         System.out.println("密码："+pwdShow);
 
         System.out.println("电话："+ phoneNumber);
