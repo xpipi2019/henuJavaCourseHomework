@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/HW6" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HW7" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/testExp" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/HW8" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
